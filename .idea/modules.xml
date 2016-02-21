@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BranchClient/BranchClient.iml" filepath="$PROJECT_DIR$/BranchClient/BranchClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JettyService/JettyService.iml" filepath="$PROJECT_DIR$/JettyService/JettyService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POSService/POSService.iml" filepath="$PROJECT_DIR$/POSService/POSService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrinterService/PrinterService.iml" filepath="$PROJECT_DIR$/PrinterService/PrinterService.iml" />
+    </modules>
+  </component>
+</project>

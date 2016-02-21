@@ -1,0 +1,11 @@
+http://localhost:4040/ali/Jetty/01/00/JettyService.jar
+http://localhost:4040/ali/Jetty/01/00/jetty-server-9.3.0.M2.jar
+http://localhost:4040/ali/Jetty/01/00/javax.servlet-api-3.1.0.jar
+http://localhost:4040/ali/Jetty/01/00/jetty-servlet-9.3.0.M2.jar
+http://localhost:4040/ali/Jetty/01/00/gson-2.4.jar
+http://localhost:4040/ali/Jetty/01/00/json-flattener-0.1.1.jar
+http://localhost:4040/ali/Jetty/01/00/jetty-http-9.3.0.M2.jar
+http://localhost:4040/ali/Jetty/01/00/jetty-io-9.3.0.M2.jar
+http://localhost:4040/ali/Jetty/01/00/jetty-security-9.3.0.M2.jar
+http://localhost:4040/ali/Jetty/01/00/minimal-json-0.9.4.jar
+http://localhost:4040/ali/Jetty/01/00/jetty-util-9.3.0.M2.jar

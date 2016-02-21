@@ -1,0 +1,40 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+	compile files('C:\\Users\\khaxar\\workspace2\\BranchClient\\bin')
+	compile files('src\\main\\resources\\rxtx-2.1.7.jar')
+	compile files('src\\main\\resources\\serialPort-941.0.0.2.jar')	
+    //compile 'org.slf4j:slf4j-api:1.7.12'
+    //testCompile 'junit:junit:4.12'
+}
+
+// To assemble all required jars and create repo file
+task copyRuntimeLibs(type: Copy) {
+    into "$buildDir\\libs"
+    from configurations.runtime
+    include {details -> details.file.name.endsWith('.jar')}
+}
+task createBuildDir(){
+	def dirr = new File( "$buildDir\\libs" )
+	if( !dirr.exists() ) {
+	  dirr.mkdirs()
+	}
+}
+
+jar { 
+	dependsOn createBuildDir
+	dependsOn copyRuntimeLibs
+	String serverUrl = "http://172.17.18.102:4040/ali/POS/01/00/"
+	String content = serverUrl + "$project.name" + ".jar\n"
+	configurations.runtime.each{
+		File file -> 
+		if (file.isFile()&&file.name.endsWith('.jar')) {content += serverUrl + file.name + "\n"}
+	}
+	def repo = new File("$buildDir\\libs\\$project.name" + ".repo")
+	repo.text = content
+}

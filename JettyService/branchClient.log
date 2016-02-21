@@ -1,0 +1,724 @@
+2016-01-24 15:07:30 INFO  JettyService:243 - 2016-01-24 15:07:30.300:INFO::main: Logging initialized @4399ms
+2016-01-24 15:07:31 INFO  JettyService:243 - service (Jetty) is starting...
+2016-01-24 15:07:35 INFO  JettyService:243 - 2016-01-24 15:07:35.559:INFO:oejs.Server:main: jetty-9.3.0.M2
+2016-01-24 15:07:35 INFO  JettyService:243 - 2016-01-24 15:07:35.638:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@d818ff0{/,null,AVAILABLE}
+2016-01-24 15:07:35 INFO  JettyService:243 - 2016-01-24 15:07:35.654:INFO:oejs.ServerConnector:main: Started ServerConnector@6711b47a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-01-24 15:07:35 INFO  JettyService:243 - 2016-01-24 15:07:35.654:INFO:oejs.Server:main: Started @9753ms
+2016-01-24 15:07:50 INFO  JettyService:243 - received message 
+2016-01-24 15:07:50 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:15:06 INFO  JettyService:243 - 2016-01-24 15:15:06.476:INFO::main: Logging initialized @2995ms
+2016-01-24 15:15:06 INFO  JettyService:243 - service (Jetty) is starting...
+2016-01-24 15:15:06 INFO  JettyService:243 - 2016-01-24 15:15:06.645:INFO:oejs.Server:main: jetty-9.3.0.M2
+2016-01-24 15:15:06 INFO  JettyService:243 - 2016-01-24 15:15:06.694:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@2d7aea99{/,null,AVAILABLE}
+2016-01-24 15:15:06 INFO  JettyService:243 - 2016-01-24 15:15:06.724:INFO:oejs.ServerConnector:main: Started ServerConnector@447d8eff{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-01-24 15:15:06 INFO  JettyService:243 - 2016-01-24 15:15:06.725:INFO:oejs.Server:main: Started @3246ms
+2016-01-24 15:15:24 INFO  JettyService:243 - received message 
+2016-01-24 15:15:40 INFO  JettyService:243 - 2016-01-24 15:15:40.824:WARN:oejs.ServletHandler:qtp78766252-15: /SalamAction
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-24 15:15:57 INFO  JettyService:243 - received message {"callback":"x"}
+2016-01-24 15:16:01 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:19:56 INFO  JettyService:243 - received message {"callback":"x"}
+2016-01-24 15:19:56 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:19:56 INFO  JettyService:243 - 2016-01-24 15:19:56.900:WARN:oejs.ServletHandler:qtp78766252-14: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-24 15:22:06 INFO  JettyService:243 - received message {"callback":"x"}
+2016-01-24 15:22:06 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:22:30 INFO  JettyService:243 - received message {"callback":"x"}
+2016-01-24 15:22:30 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:23:19 INFO  JettyService:243 - received message {"callback":"x"}
+2016-01-24 15:23:19 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:30:00 INFO  JettyService:243 - received message {"callback":["x","jQuery11200004319238942116499_1453636800791"],"_":"1453636800792"}
+2016-01-24 15:30:00 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:36:03 INFO  JettyService:243 - received message {"callback":["x","jQuery1120036424109409563243_1453637163133"],"_":"1453637163134"}
+2016-01-24 15:36:03 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:44:31 INFO  JettyService:243 - received message {"callback":["x","jQuery112005038809820543975_1453637671953"],"_":"1453637671954"}
+2016-01-24 15:44:31 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 15:44:47 INFO  JettyService:243 - received message {"callback":["x","jQuery112005125981455203146_1453637687905"],"_":"1453637687906"}
+2016-01-24 15:44:47 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:17:46 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery112008836010424420238_1453639666060"],"_":"1453639666061"}
+2016-01-24 16:17:46 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:18:49 INFO  JettyService:243 - received message {"callback":"branchClient.jsonpCallback"}
+2016-01-24 16:18:49 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:18:49 INFO  JettyService:243 - 2016-01-24 16:18:49.336:WARN:oejs.ServletHandler:qtp78766252-18: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-24 16:19:02 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery1120042708673933520913_1453639682481"],"_":"1453639682482"}
+2016-01-24 16:19:02 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:20:45 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery112004590386028867215_1453639840411"],"_":"1453639840412"}
+2016-01-24 16:20:45 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:22:01 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery1120026448144507594407_1453639921341"],"_":"1453639921342"}
+2016-01-24 16:22:01 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:23:01 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery1120046055227098986506_1453639981162"],"_":"1453639981163"}
+2016-01-24 16:23:01 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:23:48 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery1120006882981257513165_1453640028382"],"_":"1453640028383"}
+2016-01-24 16:23:48 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:24:37 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery1120007220986299216747_1453640077615"],"_":"1453640077616"}
+2016-01-24 16:24:37 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:26:29 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery112005040912674739957_1453640189940"],"_":"1453640189941"}
+2016-01-24 16:26:29 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:28:32 INFO  JettyService:243 - received message {"callback":["branchClient.jsonpCallback","jQuery1120039208227838389575_1453640299212"],"_":"1453640299213"}
+2016-01-24 16:28:32 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:28:46 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 16:31:15 INFO  JettyService:243 - received message {"callback":["jsonpCallback","jQuery1120045712156780064106_1453640466447"],"_":"1453640466448"}
+2016-01-24 16:31:15 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:31:16 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 16:35:55 INFO  JettyService:243 - received message {"callback":["jsonpCallback","jQuery112007094799457117915_1453640746115"],"_":"1453640746116"}
+2016-01-24 16:35:55 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:36:02 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 16:41:00 INFO  JettyService:243 - received message {"callback":["jsonpCallback","jQuery112008158610181417316_1453641048832"],"_":"1453641048833"}
+2016-01-24 16:41:00 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 16:41:00 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 16:44:54 INFO  JettyService:243 - received message {"callback":["jsonpCallback","jQuery1120008239667164161801_1453641276948"],"_":"1453641276949"}
+2016-01-24 16:44:54 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:04:44 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery1120039750366215594113_1453642484026"],"_":"1453642484027"}
+2016-01-24 17:04:44 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:04:44 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:05:36 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery1120049297243054024875_1453642497562"],"_":"1453642497563"}
+2016-01-24 17:05:36 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:05:58 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:08:05 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery1120039853332680650055_1453642670877"],"_":"1453642670878"}
+2016-01-24 17:08:05 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:08:29 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:09:49 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery112009337980337440968_1453642782955"],"_":"1453642782956"}
+2016-01-24 17:09:49 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:09:52 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:10:11 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery112004208852455485612_1453642796938"],"_":"1453642796939"}
+2016-01-24 17:10:11 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:10:58 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:11:38 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery1120011238598730415106_1453642895870"],"_":"1453642895871"}
+2016-01-24 17:11:38 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:12:09 INFO  JettyService:243 - 2016-01-24 17:12:09.391:WARN:oejs.ServletHandler:qtp78766252-13: /POSAction
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-24 17:12:09 INFO  JettyService:243 - 2016-01-24 17:12:09.438:WARN:oejs.ServletHandler:qtp78766252-18: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-24 17:13:33 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:13:37 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery112003313159479293972_1453643016008"],"_":"1453643016009"}
+2016-01-24 17:13:37 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:13:43 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:14:42 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery112006891896820161492_1453643080887"],"_":"1453643080888"}
+2016-01-24 17:14:42 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:14:43 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:15:30 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery112008409312055446208_1453643130254"],"_":"1453643130255"}
+2016-01-24 17:15:30 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:15:30 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:18:21 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery11200877680558944121_1453643301068"],"_":"1453643301069"}
+2016-01-24 17:18:21 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:18:21 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-24 17:18:44 INFO  JettyService:243 - received message {"callback":["branchClient.salamCallback","jQuery112007449851885903627_1453643324793"],"_":"1453643324794"}
+2016-01-24 17:18:44 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-24 17:18:44 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:37:45 INFO  JettyService:243 - 2016-01-25 12:37:45.939:INFO::main: Logging initialized @165ms
+2016-01-25 12:37:46 INFO  JettyService:243 - service (Jetty) is starting...
+2016-01-25 12:37:46 INFO  JettyService:243 - 2016-01-25 12:37:46.020:INFO:oejs.Server:main: jetty-9.3.0.M2
+2016-01-25 12:37:46 INFO  JettyService:243 - 2016-01-25 12:37:46.043:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@4364958d{/,null,AVAILABLE}
+2016-01-25 12:37:46 INFO  JettyService:243 - 2016-01-25 12:37:46.065:INFO:oejs.ServerConnector:main: Started ServerConnector@13c32369{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-01-25 12:37:46 INFO  JettyService:243 - 2016-01-25 12:37:46.066:INFO:oejs.Server:main: Started @294ms
+2016-01-25 12:38:02 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453712882239"}
+2016-01-25 12:38:02 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:38:02 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:38:18 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453712890680"}
+2016-01-25 12:39:08 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:40:53 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:43:50 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453713185152"}
+2016-01-25 12:43:53 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:44:02 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:47:38 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453713448230"}
+2016-01-25 12:47:38 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:47:38 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:48:57 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453713535444"}
+2016-01-25 12:48:57 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:48:58 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:53:19 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453713799129"}
+2016-01-25 12:53:19 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:53:19 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:53:57 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453713837906"}
+2016-01-25 12:53:57 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:53:57 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:55:06 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453713906082"}
+2016-01-25 12:55:06 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:55:06 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:55:24 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453713924206"}
+2016-01-25 12:55:24 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:55:24 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:56:44 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453714004091"}
+2016-01-25 12:56:44 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:56:44 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 12:57:04 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453714024714"}
+2016-01-25 12:57:04 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 12:57:13 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:28:58 INFO  JettyService:243 - 2016-01-25 13:28:58.347:WARN:oejs.ServletHandler:qtp1745299866-22: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 13:29:13 INFO  JettyService:243 - received message {"callback":"x"}
+2016-01-25 13:29:13 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:29:13 INFO  JettyService:243 - 2016-01-25 13:29:13.686:WARN:oejs.ServletHandler:qtp1745299866-13: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 13:29:13 INFO  JettyService:243 - 2016-01-25 13:29:13.688:WARN:oejs.ServletHandler:qtp1745299866-20: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 13:34:45 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453716285342"}
+2016-01-25 13:34:45 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:34:45 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:35:43 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453716290023"}
+2016-01-25 13:35:43 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:36:16 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:36:16 INFO  JettyService:243 - 2016-01-25 13:36:16.520:WARN:oejs.ServletHandler:qtp1745299866-28: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 13:36:43 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:38:49 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453716527208"}
+2016-01-25 13:38:49 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:38:52 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:39:48 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453716586924"}
+2016-01-25 13:39:48 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:39:50 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:48:15 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717093031"}
+2016-01-25 13:48:15 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:48:17 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:49:37 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717168356"}
+2016-01-25 13:49:37 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:50:01 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:51:08 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717266581"}
+2016-01-25 13:51:08 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:51:19 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:52:05 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:52:05 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:52:05 INFO  JettyService:243 - 2016-01-25 13:52:05.115:WARN:oejs.ServletHandler:qtp1745299866-24: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 13:52:20 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:52:20 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:52:20 INFO  JettyService:243 - 2016-01-25 13:52:20.801:WARN:oejs.ServletHandler:qtp1745299866-28: /favicon.ico
+java.io.IOException: java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:58)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 
+java.lang.NullPointerException
+	at com.iac.branchClient.service.JettyService.doGetPost(JettyService.java:54)
+	at com.iac.branchClient.service.JettyService.doGet(JettyService.java:31)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:806)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1128)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1062)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:113)
+	at org.eclipse.jetty.server.Server.handle(Server.java:507)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:284)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 13:53:26 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:53:26 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:53:26 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717406475"}
+2016-01-25 13:53:26 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:53:26 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:53:27 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:53:27 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:53:27 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717407511"}
+2016-01-25 13:53:27 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:54:51 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:54:51 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:54:51 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717491758"}
+2016-01-25 13:54:51 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:54:51 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:54:52 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:54:52 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:57:28 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:57:28 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:57:28 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717648188"}
+2016-01-25 13:57:28 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:57:28 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:57:29 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:57:29 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:57:37 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717649484"}
+2016-01-25 13:57:37 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:57:45 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
+2016-01-25 13:58:07 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback"}
+2016-01-25 13:58:07 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:58:11 INFO  JettyService:243 - received message {"callback":"branchClient.salamCallback","_":"1453717687218"}
+2016-01-25 13:58:11 INFO  JettyService:243 - sent message {"result":":)"}
+2016-01-25 13:58:17 INFO  JettyService:243 - sent message {"errorMessage":"There is no action by name POSAction."}
